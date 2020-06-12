@@ -15,7 +15,7 @@ if ($row==NULL){
 	echo "<html></head>
 <body>
 <h>email not registered</h>
-<meta http-equiv=\"refresh\" content=\"2;url=/student_database/index.html\"/>
+<meta http-equiv=\"refresh\" content=\"2;url=/index.html\"/>
 </body>
 </html>";
 }
@@ -23,7 +23,7 @@ elseif ($row['pwd']!=$usrpwd) {
 	echo "<html></head>
 <body>
 <h>wrong password</h>
-<meta http-equiv=\"refresh\" content=\"2;url=/student_database/index.html\"/>
+<meta http-equiv=\"refresh\" content=\"2;url=/index.html\"/>
 </body>
 </html>";
 }
