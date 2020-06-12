@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Accomodation
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="toggle_visibility()">
+	<div class="d-flex justify-content-center">
+		<img  src="bed3.png">
+		
+	</div>
+
+<!-- login form -->
+
+<div id="loginform">
+	<div class="d-flex align-items-center flex-column" width:500px>
+	
+<form class="" action="scripts/login.php" method="post">
+
+  <div class="form-group">
+  	<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control shadow-sm" name="Email1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control shadow-sm" name="Password1">
+  </div>
+  
+  <button type="submit" class="btn btn-primary shadow">Login</button>
+  <button type="submit" class="m-3 btn btn-primary shadow" onclick="show_regform()">New user registeration</button>
+ 
+
+</form>
+	
+
+</div>
+</div>
+
+
+<!-- Reg form -->
+
+<div id="regform">
+	<div class="d-flex align-items-center flex-column" >
+	
+<form class="" action="scripts/register.php" method="post">
+
+  <div class="form-group">
+  	<h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+    <label for="Email1">Email address</label>
+    <input type="text" class="form-control shadow-sm" name="Email1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+  	
+    <label for="Email1">Full Name</label>
+    <input type="text" class="form-control shadow-sm" name="fname" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control shadow-sm" name="Password1">
+  </div>
+  
+  <button type="submit" class="btn btn-primary shadow" name="register">Register</button>
+  <button type="submit" class="m-3 btn btn-primary shadow" onclick="show_loginform()">Login to existing account</button>
+ 
+
+</form>
+	
+
+</div>
+</div>
+
+</body>
+</html>
